@@ -30,6 +30,7 @@ startButton.addEventListener("click", startGame);
 window.addEventListener("orientationchange", checkDimensionsDevice);
 document.addEventListener("keydown", detectKey);
 keyBoardContainer.addEventListener("click", detectKeyButton);
+keyBoardContainer.addEventListener("touch", detectKeyButton);
 newGameButton.addEventListener("click", restartGame);
 quitButton.addEventListener("click", quitGame);
 quitButton.addEventListener("click", function(){hideDiv(gameScreen)}, false);
