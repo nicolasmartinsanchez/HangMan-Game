@@ -1,6 +1,8 @@
 # HangMan-Game
 #### Hangman is a guessing game. One player thinks of a word, phrase or sentence and the other(s) tries to guess it by suggesting letters within a certain number of guesses.
 
+### ¡Use your keyboard or the keyboard shown in the screen to play!
+
 ![screenShotGameScreen](https://user-images.githubusercontent.com/111712251/192398945-f6543e90-9959-4ea8-86a0-7cd5e4219773.PNG)
 
 ¡Don't forget to visit my Linkedin profile!
