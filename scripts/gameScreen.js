@@ -94,10 +94,9 @@ function detectKeyButton (event) {    // key detector of the virtual keyboard
     alert("Entro 1");
     if (gameIsOver == false)    // if game is over, does not receive more letters 
     {
+        alert(event);
         keyButtonPressed = event.path[0];
-        alert(keyButtonPressed);
         letter = keyButtonPressed.innerText;
-        alert(letter);
         getInputs();
     }  
 }
