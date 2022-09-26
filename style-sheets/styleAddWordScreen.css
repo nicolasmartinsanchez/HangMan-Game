@@ -25,9 +25,11 @@
     font-family: 'Games', sans-serif;                                           
 }
 
+::placeholder { color: #668F6E; }
+
 .warning-text {
     font-size: 14px;
-    color: #495057;
+    color: #668F6E;
     word-spacing: 5px;
     margin: 10px 0px;
 }
