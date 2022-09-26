@@ -91,10 +91,13 @@ function detectKey (event) {    // key detector of the physical keyboard
 
 function detectKeyButton (event) {    // key detector of the virtual keyboard
     keyOrButton = "button";
+    alert("Entro 1");
     if (gameIsOver == false)    // if game is over, does not receive more letters 
     {
         keyButtonPressed = event.path[0];
+        alert(keyButtonPressed);
         letter = keyButtonPressed.innerText;
+        alert(letter);
         getInputs();
     }  
 }
