@@ -1,6 +1,11 @@
+@font-face {
+    font-family: myFontGame;
+    src: url(../font-family/PRBRS___.ttf);
+}
+
 html, body {
     background-color: #F0FFF4;
-    font-family: 'Games', sans-serif;                                       
+    font-family: myFontGame, sans-serif;                                       
 }
 
 .logo-container {
@@ -43,7 +48,7 @@ button {
     padding: 24px;
     font-size: 20px;
     cursor: pointer;
-    font-family: 'Games', sans-serif;
+    font-family: myFontGame, sans-serif;
 }
 
 .start-button {

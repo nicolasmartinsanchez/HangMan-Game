@@ -22,7 +22,7 @@
     line-height: 150%;
     color: #668F6E;
     resize: none;
-    font-family: 'Games', sans-serif;                                           
+    font-family: myFontGame, sans-serif;                                           
 }
 
 ::placeholder { color: #668F6E; }

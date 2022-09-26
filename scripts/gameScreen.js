@@ -63,7 +63,7 @@ function createLettersContainer ()    //Creates spaces in the interface for each
         newInputText.setAttribute("readonly", "readonly");
         boxText.appendChild(newInputText);
         newInputText.style.color = "#F0FFF4";
-        newInputText.style.fontFamily = "Games";
+        newInputText.style.fontFamily = "myFontGame";
     }
 }
 
@@ -251,13 +251,13 @@ function alertGameEnd (textTop, textBottom)
     text1.setAttribute("class", "text-alert-1");
     popUpGameEnded.appendChild(text1);
     text1.appendChild(texto1);
-    text1.style.fontFamily = "Games";
+    text1.style.fontFamily = "myFontGame";
     let text2 = document.createElement("textarea");
     let texto2 = document.createTextNode(textBottom);
     text2.setAttribute("class", "text-alert-2");
     popUpGameEnded.appendChild(text2);
     text2.appendChild(texto2);
-    text2.style.fontFamily = "Games";
+    text2.style.fontFamily = "myFontGame";
 }
 
 function checkCounter ()
