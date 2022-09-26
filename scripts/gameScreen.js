@@ -90,7 +90,7 @@ function detectKey (event) {    // key detector of the physical keyboard
 
 function detectKeyButton (event) {    // key detector of the virtual keyboard
     keyOrButton = "button";
-    alert(event.path[0]);
+    alert(event.target.innerText);
     if (gameIsOver == false)    // if game is over, does not receive more letters 
     {
         keyButtonPressed = event.path[0];
