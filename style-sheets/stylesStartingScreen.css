@@ -1,0 +1,151 @@
+html, body {
+    background-color: #F0FFF4;
+    font-family: 'Games', sans-serif;                                       
+}
+
+.logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    max-height: 75px;
+}
+
+.logo-nm {
+    height: 75px;
+}
+
+.starting-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    background-color: #F0FFF4;
+}
+
+h1 {
+    font-size: 30px;
+    color: #668F6E;
+}
+
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    width: 350px;
+    height: 250px;
+    margin-top: 220px;
+}
+
+button {
+    border-radius: 5px;
+    padding: 24px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Games', sans-serif;
+}
+
+.start-button {
+    width: 317px;
+    height: 114px;
+    background-color: #668F6E;
+    border: none;
+    color: #F0FFF4;
+}
+
+.add-word-button {
+    width: 280px;
+    height: 67px;
+    background-color: #F0FFF4;
+    border: 1px solid #668F6E;
+    color: #668F6E;
+}
+
+.icons-container {
+    position: fixed;
+    bottom: 2.5%;
+    left: 45%;
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    gap: 15px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px)
+{
+    .logo-container {
+        max-height: 55px;
+    }
+    
+    .logo-nm {
+        height: 55px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .buttons-container 
+    {
+        width: 80%;
+        height: 20%;
+        margin-top: 50%;
+        gap: 10%;
+    }
+
+    .start-button {
+        width: 90%;
+        height: 60px;
+        margin: 10px 0px;
+        font-size: 17px;
+    }
+    
+    .add-word-button {
+        width: 80%;
+        height: 50px;
+        margin: 10px 0px;
+        font-size: 17px;
+        padding: 15px;
+    }
+
+    .icons-container {
+        bottom: 1.5%;
+        left: 49.25%;
+        align-items: center;
+        width: 5%;
+        gap: 8px;
+    }
+}
+
+@media screen and (max-height: 450px)
+{
+    .starting-screen {
+        margin-top: 0px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .buttons-container {
+        height: 170px;
+        margin-top: 20px;
+    }
+
+    button {
+        font-size: 19px;
+    }
+    
+    .start-button {
+        width: 280px;
+        height: 80px;
+    }
+    
+    .add-word-button {
+        width: 240px;
+        height: 50px;
+        padding: 15px;
+    }
+}

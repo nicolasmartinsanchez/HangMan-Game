@@ -1,0 +1,287 @@
+.game-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.canvas-container {
+    border: none;
+    padding: 10px;
+}
+
+.divGame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.word-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    min-width: 30%;
+    height: 70px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.letters-container {
+    width: 60px;
+    border: none;
+    background-color: #F0FFF4;
+    border-bottom: 3px solid #668F6E;
+    color: #668F6E;
+    font-size: 50px;
+    text-align: center;
+    user-select: none;
+    outline: none;
+}
+
+.letter-used-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 30%;
+    height: 30px;
+    padding: 10px;
+    letter-spacing: 24px;
+    font-size: 24px;
+    color: #495057;
+}
+
+.keyboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    gap: 5px;
+}
+
+.key {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    font-size: 24px;
+    background-color: #EBEBEB;
+    border: none;
+    color: #668F6E;
+    outline: none;
+}
+
+.buttons-game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 25px 0px 20px 0px;
+    gap: 10px;
+}
+
+.buttons-game {
+    width: 45%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #EBEBEB;
+    box-shadow: 0px 0px 4px 1px #F0FFF4;
+    color: #668F6E;
+    font-size: 18px;
+    vertical-align: middle;
+    padding: 0px;
+}
+
+.alert-game-end {
+    position: fixed;
+    top: 40%;
+    left: 35%;
+    width: 30%;
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #668F6E;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: center;
+    opacity: 1;
+}
+
+.text-alert-1 {
+    width: 90%;
+    height: 20%;
+    text-align: center;
+    color: white;
+    background-color: #668F6E;
+    border: none;
+    font-size: 28px;
+    opacity: 1;
+}
+
+.text-alert-2 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    color: #F0FFF4;
+    background-color: #668F6E;
+    border: none;
+    font-size: 17px;
+    width: 90%;
+    height: 40%;
+    opacity: 1;   
+}
+
+textarea {
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    resize: none;
+    opacity: 1;
+}
+
+@media screen and (max-width: 700px)
+{
+    .word-container {
+        gap: 7px;
+        max-width: 90%;
+        height: 30px;
+        margin-top: 10px;
+    }
+    
+    .letters-container {
+        width: 25px;
+        height: 30px;
+        font-size: 25px;
+    }
+    
+    .letter-used-container {
+        max-width: 70%;
+        height: 25px;
+        letter-spacing: 12px;
+        font-size: 17px;
+    }
+
+    .keyboard-container {
+        width: 85%;
+        gap: 3px;
+    }
+    
+    .key {
+        width: 30px;
+        height: 30px;
+        font-size: 19px;
+    }
+
+    .buttons-game-container {
+        width: 60%;
+    }
+
+    .buttons-game {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .alert-game-end {
+        top: 30%;
+        left: 10%;
+        width: 80%;
+    }
+
+    .text-alert-1 {
+        height: 25%;
+        font-size: 23px;
+    }
+    
+    .text-alert-2 {
+        font-size: 16px;
+        height: 45%;  
+    }
+
+    textarea {
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-height: 450px)
+{
+    .game-screen {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 5%;
+    }
+
+    .canvas-container {
+        padding: 0px;
+    }
+
+    .word-container {
+        gap: 7px;
+        max-width: 100%;
+        height: 30px;
+    }
+    
+    .letters-container {
+        width: 35px;
+        height: 35px;
+        font-size: 30px;
+    }
+    
+    .letter-used-container {
+        max-width: 80%;
+        height: 25px;
+        letter-spacing: 12px;
+        font-size: 17px;
+    }
+
+    .keyboard-container {
+        width: 95%;
+        gap: 3px;
+    }
+    
+    .key {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        font-size: 19px;
+    }
+
+    .buttons-game-container {
+        width: 60%;
+    }
+
+    .buttons-game {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .alert-game-end {
+        top: 30%;
+        left: 30%;
+        width: 40%;
+        height: 40%;
+    }
+
+    .text-alert-1 {
+        height: 30%;
+        font-size: 23px;
+    }
+    
+    .text-alert-2 {
+        font-size: 16px;
+        height: 35%;  
+    }
+
+    textarea {
+        margin: 5px;
+        padding: 5px;
+    }
+}

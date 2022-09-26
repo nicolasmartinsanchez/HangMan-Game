@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style-sheets/reset.css">
+
+    <link rel="stylesheet" href="./style-sheets/stylesStartingScreen.css">
+    <link rel="stylesheet" href="./style-sheets/styleGameScreen.css">
+    <link rel="stylesheet" href="./style-sheets/styleAddWordScreen.css">
+    <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/games">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <title>HangMan</title>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="./images/logo-nm.png" alt="Logo Nicolás Martín Sánchez" class="logo-nm">
+    </div>
+    <div class="starting-screen" id="startingScreen">
+        <h1>HANGMAN GAME</h1>
+        <div class="buttons-container">
+            <button class="start-button" id="startButton">Start Game</button>
+            <button class="add-word-button" id="addWordButton">Add New Word</button>
+        </div>
+    </div>
+    <div class="game-screen" id="gameScreen">
+        <div class="canvas-container">
+            <canvas id="board" width="450" height="450"></canvas>
+        </div>
+        <div class="divGame">
+            <div class="word-container" id="wordContainer"></div>
+            <div class="letter-used-container" id="letterUsedContainer"></div>
+            <div class="keyboard-container" id="keyBoardContainer">
+                <button class="key">A</button>
+                <button class="key">B</button>
+                <button class="key">C</button>
+                <button class="key">D</button>
+                <button class="key">E</button>
+                <button class="key">F</button>
+                <button class="key">G</button>
+                <button class="key">H</button>
+                <button class="key">I</button>
+                <button class="key">J</button>
+                <button class="key">K</button>
+                <button class="key">L</button>
+                <button class="key">M</button>
+                <button class="key">N</button>
+                <button class="key">O</button>
+                <button class="key">P</button>
+                <button class="key">Q</button>
+                <button class="key">R</button>
+                <button class="key">S</button>
+                <button class="key">T</button>
+                <button class="key">U</button>
+                <button class="key">V</button>
+                <button class="key">W</button>
+                <button class="key">X</button>
+                <button class="key">Y</button>
+                <button class="key">Z</button>
+            </div>
+            <div class="buttons-game-container">
+                <button class="buttons-game" id="newGameButton">New Game</button>
+                <button class="buttons-game" id="quitButton">Quit Game</button>
+            </div>
+        </div>
+    </div>
+    <div class="add-word-screen" id="addWordScreen">
+        <div class="textarea-container">
+            <textarea id="textAreaNewWord" placeholder="Enter a word..."></textarea>
+            <div class="warning-text">Max. 8 letters</div>
+        </div>
+        <div class="buttons-container-2">
+            <button class="button-save-start" id="saveStartButton">Save and Start</button>
+            <button class="button-back" id="backButton">Back</button>
+        </div>
+    </div>
+    <div class="icons-container" id="iconsContainer">
+        <a href="https://www.linkedin.com/in/nicolasmartinsanchez" target="_blank"><i class='bx bxl-linkedin bx-lg' style='color:#668F6E' ></i></a> 
+        <a href="https://github.com/nicolasmartinsanchez" target="_blank"><i class='bx bxl-github bx-lg' style='color:#668F6E'  ></i></a> 
+    </div>
+    <script src="./scripts/startingScreen.js"></script>
+    <script src="./scripts/gameScreen.js"></script>
+    <script src="./scripts/addWordScreen.js"></script>
+</body>
+</html>
