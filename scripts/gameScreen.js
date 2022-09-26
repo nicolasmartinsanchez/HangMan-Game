@@ -30,7 +30,6 @@ startButton.addEventListener("click", startGame);
 window.addEventListener("orientationchange", checkDimensionsDevice);
 document.addEventListener("keydown", detectKey);
 keyBoardContainer.addEventListener("click", detectKeyButton);
-keyBoardContainer.addEventListener("touch", detectKeyButton);
 newGameButton.addEventListener("click", restartGame);
 quitButton.addEventListener("click", quitGame);
 quitButton.addEventListener("click", function(){hideDiv(gameScreen)}, false);
@@ -91,8 +90,7 @@ function detectKey (event) {    // key detector of the physical keyboard
 
 function detectKeyButton (event) {    // key detector of the virtual keyboard
     keyOrButton = "button";
-    alert(gameIsOver);
-    alert(event)
+    alert(event);
     if (gameIsOver == false)    // if game is over, does not receive more letters 
     {
         keyButtonPressed = event.path[0];
